@@ -1,0 +1,20 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,300,700";
+
+// colors
+$brand-green: #7ED321;
+$white: #fff;
+$black: #222;
+$grey: #f7f7f7;
+
+@mixin light {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+@mixin regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}

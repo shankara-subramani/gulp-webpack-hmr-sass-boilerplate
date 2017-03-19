@@ -1,0 +1,28 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {% include "shared/app-icons.html" %} {% block head %}{% endblock %}
+    <!-- Bootstrap v4 & Font Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Bundled CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="stylesheets/app.css">
+</head>
+
+<body>
+    {% include "shared/navigation.html" %} {% block content %}{% endblock %} {% include "shared/footer.html" %} {% block javascript %}
+    <script src="javascripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    {% endblock %}
+</body>
+
+</html>
